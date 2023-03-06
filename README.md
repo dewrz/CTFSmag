@@ -70,22 +70,22 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 When looking at the “/mail” directory we can see there is a pcap file and some user email addresses. 
 <br>
 <br>
-<a href="https://imgur.com/5P7ZCfx"><img src="https://i.imgur.com/5P7ZCfx.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/z6yler1"><img src="https://i.imgur.com/z6yler1.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 They also describe a bug in the email2web software. I downloaded the pcap file and after analyzing the information I was able to find a username and password for “development.smag.thm”. I also took the information and passed it to the Burp Suite repeater, and we received a 200 ok response. I next add the new address to our /etc/hosts file for further enumeration.  
 <br>
 <br>
-<a href="https://imgur.com/5lwvwzl"><img src="https://i.imgur.com/5lwvwzl.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/gVv4sJh"><img src="https://i.imgur.com/gVv4sJh.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
-<a href="https://imgur.com/16PWvB9"><img src="https://i.imgur.com/16PWvB9.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/jbjy3ZR"><img src="https://i.imgur.com/jbjy3ZR.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 After logging in with the credentials we’ve found, it brings you to a page with a command injection form. After testing it we discover it is a blind injection, so we will set up a listener and try to pass a shell command. 
 <br>
 <br>
-<a href="https://imgur.com/qIsv3oI"><img src="https://i.imgur.com/qIsv3oI.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/JU3RqGx"><img src="https://i.imgur.com/JU3RqGx.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 After sending the command we received a shell on the web server. 
