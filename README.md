@@ -91,38 +91,38 @@ After logging in with the credentials we’ve found, it brings you to a page wit
 After sending the command we received a shell on the web server. 
 <br>
 <br>
-<a href="https://imgur.com/va5kLy2"><img src="https://i.imgur.com/va5kLy2.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/OkO3Wpa"><img src="https://i.imgur.com/OkO3Wpa.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 I spent some time searching around for configuration mismanagement so I could elevate my privileges and I came across a cronjob that can be exploited. 
 <br>
 <br>
-<a href="https://imgur.com/wgVwiFt"><img src="https://i.imgur.com/wgVwiFt.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/JpPrD5y"><img src="https://i.imgur.com/JpPrD5y.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 I create a public key on my attack box and then copy it to jakes backup public key, this will give us the ability to log into jakes account via ssh. 
 <br>
 <br>
-<a href="https://imgur.com/dT7K6Qn"><img src="https://i.imgur.com/dT7K6Qn.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/bHYnuud"><img src="https://i.imgur.com/bHYnuud.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
-<a href="https://imgur.com/Kr8iYkE"><img src="https://i.imgur.com/Kr8iYkE.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/5Bcxcyl"><img src="https://i.imgur.com/5Bcxcyl.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 After logging in via SSH, we were able to retrieve the first user flag. 
 <br>
 <br>
-<a href="https://imgur.com/PSknXeL"><img src="https://i.imgur.com/PSknXeL.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/fYDafi6"><img src="https://i.imgur.com/fYDafi6.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 Now we need to escalate our privileges to root. I ran the command “sudo -l” which lets us know that we can take advantage of the binary “apt-get”. 
 <br>
 <br>
-<a href="https://imgur.com/kTbENI7"><img src="https://i.imgur.com/kTbENI7.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/d6ugiKP"><img src="https://i.imgur.com/d6ugiKP.jpg" title="source: imgur.com" /></a>
 <br>
 <br>
 By running “sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh” we can obtain root privileges and retrieve the root flag. 
 <br>
 <br>
-<a href="https://imgur.com/rmCw9z2"><img src="https://i.imgur.com/rmCw9z2.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/8l5VfOD"><img src="https://i.imgur.com/8l5VfOD.jpg" title="source: imgur.com" /></a>
 
